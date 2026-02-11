@@ -50,3 +50,16 @@ xyz-lib-vx.y.z/
 ├── README.md        <-- Documentation
 └── LICENSE          <-- Legal stuff
 ```
+
+
+
+# How to use the third-party static library you just created?
+
+Well here I am assuming that you have kept the `xyz` library in a proper location and you have included in your `main.c` successfully.
+
+## Command
+```
+gcc main.c -o main -Ipath/to/xyz_lib/include -Lpath/to/xyz_lib/lib -lxyz
+```
+
+That's it...
